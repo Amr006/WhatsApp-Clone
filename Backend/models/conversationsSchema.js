@@ -20,6 +20,11 @@ const ConversationsSchema = Schema({
   },
   GroupName : {
     type : String , 
+  },
+  LastMessage : {
+    type: Schema.Types.ObjectId,
+    ref: "Message",
+    default: "",
   }
 
 

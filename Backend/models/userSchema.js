@@ -49,6 +49,11 @@ const UserSchema = Schema(
     Notification: {
       type : Number ,
       default: 0 ,
+    },
+    Friends: {
+      type: [Schema.Types.ObjectId],
+      ref: "User",
+      default: [],
     }
   },
   { timestamps: true }
